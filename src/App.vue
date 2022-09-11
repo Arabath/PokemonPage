@@ -1,9 +1,9 @@
-<template>
+<template>  
   <PokemonPage />
 </template>
 
 <script>
-import PokemonPage from './pages/pokemonPage.vue'
+import PokemonPage from './pages/PokemonPage'
 
 export default {
   name: 'App',
