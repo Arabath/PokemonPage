@@ -26,9 +26,10 @@
 </template>
 
 <script>
+
+//Importaciones
 import PokemonOptions from '@/components/PokemonOptions'
 import PokemonPicture from '@/components/PokemonPicture'
-
 import getPokemonOptions from '@/helpers/getPokemonOptions'
 
 
@@ -45,7 +46,7 @@ export default {
     },
     methods: {
         async mixPokemonArray() {
-            this.pokemonArr = await getPokemonOptions()
+            this.pokemonArr = await getPokemonOptions()  
 
             const rndInt = Math.floor( Math.random() * 4 )
             this.pokemon = this.pokemonArr[ rndInt ]
